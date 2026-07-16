@@ -1,9 +1,6 @@
 #include<iostream>
 using namespace std;
-int main(){
-    char ch;
-    cout<<"Enter a character";
-    cin>> ch;
+void findChar(char ch){
     if(ch>='A'&&ch<='Z'){
         cout<<"Uppercase Letter";
     }
@@ -15,5 +12,11 @@ int main(){
     }
     else
     cout<<"A Special Character";
+}
+int main(){
+    char ch;
+    cout<<"Enter a character";
+    cin>> ch;
+    findChar(ch);
     return 0;
 }
